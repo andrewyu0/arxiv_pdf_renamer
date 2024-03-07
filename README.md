@@ -1,6 +1,7 @@
 # ArXiv PDF Renamer
 
-<img width="1076" alt="image" src="https://github.com/andrewyu0/arxiv_pdf_renamer/assets/5696002/0bd39335-ed3a-4723-ba9a-ee30a352fdd0">
+<img width="827" alt="image" src="https://github.com/andrewyu0/arxiv_pdf_renamer/assets/5696002/9ac04e28-cbab-4803-ac34-90a73df300b8">
+
 
 
 ## Goal
