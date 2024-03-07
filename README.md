@@ -1,4 +1,7 @@
-# ArXiv PDF Renaming 
+# ArXiv PDF Renamer
+
+<img width="1076" alt="image" src="https://github.com/andrewyu0/arxiv_pdf_renamer/assets/5696002/0bd39335-ed3a-4723-ba9a-ee30a352fdd0">
+
 
 ## Goal
 Our goal was to rename PDF files stored in the `~/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents/` directory. Each file was named with its unique arXiv ID, but we aimed to rename each file using its corresponding arXiv paper title for straightforward identification.
