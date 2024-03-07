@@ -2,11 +2,16 @@ import os
 import requests
 import xml.etree.ElementTree as ET
 import glob
+import re
 
 def rename_pdfs(file_paths):
     new_names = []
     success_counter = 0
     skip_counter = 0
+
+def sanitize_title(title):
+    return re.sub("[\\/:*?"<>|"]", "_", title)
+
     for file in file_paths:
         expanded_file_path = os.path.expanduser(file)
         file_name_without_extension = os.path.basename(expanded_file_path).split(".pdf")[0]
@@ -21,7 +26,7 @@ def rename_pdfs(file_paths):
             if title_element is not None and title_element.text.lower() != "error":
                 title = title_element.text
                 print(f"File: {expanded_file_path}, Title: {title}")
-                sanitized_title = " ".join(title.split())
+                sanitized_title = sanitize_title(" ".join(title.split()))
                 new_file_name = os.path.join(os.path.dirname(expanded_file_path), sanitized_title + ".pdf")
                 try:
                     os.rename(expanded_file_path, new_file_name)
